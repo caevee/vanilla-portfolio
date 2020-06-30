@@ -49,8 +49,11 @@ a {
 }
 
 #projects h1 {
+	color: #eb3b5a;
+	margin-top: 100px;
     font-size: 4rem;
     font-weight: 300;
+	text-transform: uppercase;
 }
 
 #projects .projects-card {
@@ -59,22 +62,109 @@ a {
     margin-top: 100px;
     max-width: 80%;
     overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 #projects h2 {
     font-size: 2.5rem;
-    padding: 10px 20px;
+    padding: 20px 30px 10px;
     margin-top: 20px;
 }
 #projects p {
-    padding: 10px 20px;
+    padding: 20px 30px;
     font-size: 1.5rem;
     letter-spacing: .1rem;
 }
 
-#projects img {
+#projects .projects-img {
+	border-top: solid #777 0.1px;
     width: 100%;
-    border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	display: block;
+}
+
+#aboutme .container {
+    flex-direction: column;
+}
+
+#aboutme h1 {
+	color: #eb3b5a;
+	margin-top: 100px;
+    font-size: 4rem;
+    font-weight: 300;
+	text-transform: uppercase;
+}
+
+#aboutme .aboutme-content, #aboutme .aboutme-technologies-content {
+	margin-top: 50px;
+	width: 80%;
+}
+
+#aboutme p {
+	text-align: center;
+	font-size: 2.5rem;
+	letter-spacing: .2rem;
+}
+
+#resume .container {
+	min-height: 50vh;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#resume .resume-top {
+	text-align: center;
+}
+#resume h1 {
+	color: #eb3b5a;
+	margin-top: 100px;
+    font-size: 4rem;
+    font-weight: 300;
+	text-transform: uppercase;
+}
+
+#resume h2 {
+	margin: 20px 0 50px;
+	color: #777;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+#resume a {
+	margin: 0 10px;
+	border: solid 2px #eb3b5a;
+	font-size: 2rem;
+	color: #eb3b5a;
+	border-radius: 5px;
+	padding: 10px;
+	transition: .3s ease;
+	transition-property: color, background-color;
+}
+
+#resume a:hover {
+	color: white;
+	background-color: #eb3b5a;
+
+}
+
+footer {
+	border-top: 2px #eb3b5a solid;
+	display: flex;
+	justify-content: center;
+}
+
+footer p, footer a {
+	color: black;
+	padding: 20px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+footer a {
+	color: #777;
+	transition: .2s ease opacity;
+}
+
+footer a:hover {
+	opacity: 0.5;
 }
