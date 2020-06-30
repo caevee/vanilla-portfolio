@@ -1,0 +1,80 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#hero {
+	background-image: url(../assets/bg.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+}
+#hero .hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+	font-size: 4rem;
+	font-weight: 300;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+
+#projects .container {
+    flex-direction: column;
+}
+
+#projects h1 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+#projects .projects-card {
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 80%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#projects h2 {
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+#projects p {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+#projects img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
