@@ -135,6 +135,7 @@ a {
 	padding: 10px;
 	transition: .3s ease;
 	transition-property: color, background-color;
+	background-color: rgba(0, 0, 0, .7);
 }
 
 #projects .overlay a:hover {
