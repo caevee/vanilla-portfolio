@@ -26,12 +26,27 @@ a {
 	background-position: top center;
 	position: relative;
 }
+#hero .hero:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #eb3b5a;
+	position: absolute;
+	opacity: .1;
+}
+
 #hero .hero {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
+#hero .titles {
+	z-index: 1;
+}
+
 #hero h1 {
     display: block;
     width: fit-content;
@@ -50,7 +65,7 @@ a {
 
 .oldname {
 	animation-name: oldName;
-	animation-delay: 1.5s;
+	animation-delay: 2.5s;
     animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
@@ -60,7 +75,7 @@ a {
 	left: 0;
 	opacity: 0;
 	animation-name: newName;
-	animation-delay: 1.5s;
+	animation-delay: 2.5s;
     animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
