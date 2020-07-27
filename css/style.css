@@ -1,289 +1,287 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 html {
-	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
-	scroll-behavior: smooth;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 .container {
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #hero {
-	background-image: url(../assets/bg.jpg);
-	background-size: cover;
-	background-position: top center;
-	position: relative;
+  background-image: url(../assets/bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
 }
-#hero .hero:after{
-	content: "";
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: #eb3b5a;
-	position: absolute;
-	opacity: .1;
+#hero .hero:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #eb3b5a;
+  position: absolute;
+  opacity: 0.1;
 }
 
 #hero .hero {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 50px;
-	justify-content: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
 }
 #hero .titles {
-	z-index: 1;
+  z-index: 1;
 }
 
 #hero h1 {
-    display: block;
-    width: fit-content;
-	font-size: 4rem;
-	font-weight: 300;
-	color: white;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	text-align: left;
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: left;
 }
 
 .title {
-	position: relative;
+  position: relative;
 }
 
 .oldname {
-	animation-name: oldName;
-	animation-delay: 2.5s;
-    animation-duration: 1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in-out;
+  animation-name: oldName;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 .newname {
-	position: absolute;
-	left: 0;
-	opacity: 0;
-	animation-name: newName;
-	animation-delay: 2.5s;
-    animation-duration: 1s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in-out;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  animation-name: newName;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 #projects .container {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #projects h1 {
-	color: #eb3b5a;
-	margin-top: 100px;
-    font-size: 4rem;
-    font-weight: 300;
-	text-transform: uppercase;
+  color: #eb3b5a;
+  margin-top: 100px;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 #projects .projects-content {
-	max-width: 80%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #projects .projects-card {
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 100px;
-    max-width: 90%;
-    overflow: hidden;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	position: relative;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 90%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
 }
 
 #projects .overlay {
-	background-color: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	transition: .3s opacity;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s opacity;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #projects .overlay a {
-	margin: 30px 0;
-	font-size: 2rem;
-	color: white;
-	border: solid 2px white;
-	border-radius: 5px;
-	padding: 10px;
-	transition: .3s ease;
-	transition-property: color, background-color;
-	background-color: rgba(0, 0, 0, .7);
+  margin: 30px 0;
+  font-size: 2rem;
+  color: white;
+  border: solid 2px white;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.3s ease;
+  transition-property: color, background-color;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #projects .overlay a:hover {
-	color: black;
-	background-color: white;
-
+  color: black;
+  background-color: white;
 }
 #projects .overlay:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 #projects h2 {
-    font-size: 2.5rem;
-    padding: 20px 30px 10px;
-    margin-top: 20px;
+  font-size: 2.5rem;
+  padding: 20px 30px 10px;
+  margin-top: 20px;
 }
 #projects p {
-    padding: 20px 30px;
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
+  padding: 20px 30px;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
 #projects .projects-img {
-	border-top: solid #777 0.1px;
-    width: 100%;
-	border-radius: 0 0 10px 10px;
-	display: block;
+  border-top: solid #777 0.1px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  display: block;
 }
 
 #aboutme .container {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #aboutme h1 {
-	color: #eb3b5a;
-	margin-top: 100px;
-    font-size: 4rem;
-    font-weight: 300;
-	text-transform: uppercase;
+  color: #eb3b5a;
+  margin-top: 100px;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-#aboutme .aboutme-content, #aboutme .aboutme-technologies-content {
-	margin-top: 50px;
-	width: 80%;
+#aboutme .aboutme-content,
+#aboutme .aboutme-technologies-content {
+  margin-top: 50px;
+  width: 80%;
 }
 
 #aboutme p {
-	text-align: center;
-	font-size: 2rem;
-	letter-spacing: .2rem;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 #aboutme .aboutme-technologies-top h1 {
-	color: #777;
-	font-size: 2.5rem;
+  color: #777;
+  font-size: 2.5rem;
 }
 
 #resume .container {
-	min-height: 50vh;
-	flex-direction: column;
-	justify-content: flex-start;
-	margin-bottom: 50px;
+  min-height: 50vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 50px;
 }
 
 #resume .resume-top {
-	text-align: center;
+  text-align: center;
 }
 #resume h1 {
-	color: #eb3b5a;
-	margin-top: 100px;
-    font-size: 4rem;
-    font-weight: 300;
-	text-transform: uppercase;
+  color: #eb3b5a;
+  margin-top: 100px;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-
 #resume h2 {
-	margin: 20px 0 50px;
-	color: #777;
-    font-size: 2.5rem;
-    font-weight: 300;
+  margin: 20px 0 50px;
+  color: #777;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 #resume a {
-	margin: 0 10px;
-	border: solid 2px #eb3b5a;
-	font-size: 2rem;
-	color: #eb3b5a;
-	border-radius: 5px;
-	padding: 10px;
-	transition: .3s ease;
-	transition-property: color, background-color;
+  margin: 0 10px;
+  border: solid 2px #eb3b5a;
+  font-size: 2rem;
+  color: #eb3b5a;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.3s ease;
+  transition-property: color, background-color;
 }
 
 #resume a:hover {
-	color: white;
-	background-color: #eb3b5a;
-
+  color: white;
+  background-color: #eb3b5a;
 }
 
 footer {
-	border-top: 2px #eb3b5a solid;
-	display: flex;
-	justify-content: center;
+  border-top: 2px #eb3b5a solid;
+  display: flex;
+  justify-content: center;
 }
 
-footer p, footer a {
-	color: black;
-	padding: 20px;
-	text-align: center;
-	font-size: 1.5rem;
+footer p,
+footer a {
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 footer a {
-	color: #777;
-	transition: .2s ease opacity;
+  color: #777;
+  transition: 0.2s ease opacity;
 }
 
 footer a:hover {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
-
-@keyframes oldName{
-  0%{
+@keyframes oldName {
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     display: none;
     opacity: 0;
   }
 }
 
-@keyframes newName{
-  0%{
+@keyframes newName {
+  0% {
     opacity: 0;
   }
-  100%{
-	opacity: 1;
+  100% {
+    opacity: 1;
   }
 }
 
-@media (min-width:1025px)  {
-
-#projects .projects-card {
-	width: 40%;
-}
-footer p, footer a {
-	font-size: 2rem;
-}
+@media (min-width: 1025px) {
+  #projects .projects-card {
+    width: 40%;
+  }
+  footer p,
+  footer a {
+    font-size: 2rem;
+  }
 }
